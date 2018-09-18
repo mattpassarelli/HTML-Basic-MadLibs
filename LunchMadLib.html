@@ -1,0 +1,127 @@
+<html>
+
+<head>
+    <title>Class MadLib</title>
+
+    <script>
+        function onSubmit() {
+            var input1 = document.getElementById("input1");
+            var input2 = document.getElementById("input2");
+            var input3 = document.getElementById("input3");
+            var input4 = document.getElementById("input4");
+            var input5 = document.getElementById("input5");
+            var input6 = document.getElementById("input6");
+            var input7 = document.getElementById("input7");
+            var input8 = document.getElementById("input8");
+            var input9 = document.getElementById("input9");
+            var input10 = document.getElementById("input10");
+            var input11 = document.getElementById("input11");
+            var input12 = document.getElementById("input12");
+            var input13 = document.getElementById("input13");
+            var input14 = document.getElementById("input14");
+
+            var body = document.getElementById("lib");
+
+            var button = document.createElement("button");
+            button.appendChild(document.createTextNode("Go back to the main menu"));
+
+            var MadLib = "<hr>" + "Make sure your lunch " + input1.value + " is filled with nutrious <br>" +
+                input2.value + " food. Do not go to the " + input3.value + " food stand across the street from school. <br>" +
+                "The hamburgers they serve are fried in " + input4.value + " and are made of " + input5.value + " meat. <br>" +
+                "So take a sandwich made of " + input6.value + " or " + input7.value + "; it's much healthier!" + " Drink " + input8.value +
+                "<br> milk instead of " + input9.value + " colas. <br> <br>"
+
+            body.innerHTML = MadLib;
+
+            body.appendChild(button);
+
+            button.onclick = function () {
+                window.location.href = "MadLibs.html";
+            }
+
+            body.appendChild(document.createElement("hr"));
+
+            return false;
+        }
+    </script>
+</head>
+
+<body>
+    <table align="center">
+        <form onsubmit="return onSubmit()">
+
+            <tr>
+                <td>Container:</td>
+                <td>
+                    <input type="text" id=input1>
+                </td>
+                <br>
+            </tr>
+            <tr>
+                <td>Adjective:</td>
+                <td>
+                    <input type="text" id=input2>
+                </td>
+                <br>
+            </tr>
+            <tr>
+                <td>Adjective:</td>
+                <td>
+                    <input type="text" id=input3>
+                </td>
+                <br>
+            </tr>
+            <tr>
+                <td>Noun:</td>
+                <td>
+                    <input type="text" id=input4>
+                </td>
+                <br>
+            </tr>
+            <tr>
+                <td>An animal:</td>
+                <td>
+                    <input type="text" id=input5>
+                </td>
+                <br>
+            </tr>
+            <tr>
+                <td>A vegtable:</td>
+                <td>
+                    <input type="text" id=input6>
+                </td>
+                <br>
+            </tr>
+            <tr>
+                <td>A vegtable:</td>
+                <td>
+                    <input type="text" id=input7>
+                </td>
+                <br>
+            </tr>
+            <tr>
+                <td>A Color:</td>
+                <td>
+                    <input type="text" id=input8>
+                </td>
+                <br>
+            </tr>
+            <tr>
+                <td>Adjective:</td>
+                <td>
+                    <input type="text" id=input9>
+                </td>
+                <br>
+            </tr>
+            <td>
+                <input type="submit" value="Submit">
+            </td>
+    </table>
+    </form>
+</body>
+
+<body id="lib" style="text-align: center">
+
+</body>
+
+</html>

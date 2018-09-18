@@ -1,0 +1,98 @@
+<html>
+
+<head>
+    <title>Food MadLib</title>
+
+    <script>
+        function onSubmit() {
+            var input1 = document.getElementById("input1");
+            var input2 = document.getElementById("input2");
+            var input3 = document.getElementById("input3");
+            var input4 = document.getElementById("input4");
+            var input5 = document.getElementById("input5");
+            var input6 = document.getElementById("input6");
+            var body = document.getElementById("lib");
+
+            var button = document.createElement("button");
+            button.appendChild(document.createTextNode("Go back to the main menu"));
+
+            var MadLib = "<hr>" + "Be kind to your " + input1.value + "-footed " + input2.value + "<br>" +
+                "For a duck may be somebody`s " + input3.value + "," + "<br>" +
+                "Be kind to your " + input3.value + " in " + input4.value + "<br>" +
+                "Where the weather is always " + input5.value + "." + "<br>" + "<br>" +
+                "You may think that this is the " + input6.value + "," + "<br>" +
+                "Well it is." + "<br> <br>"
+
+            body.innerHTML = MadLib;
+
+            body.appendChild(button);
+
+            button.onclick = function () {
+                window.location.href = "MadLibs.html";
+            }
+
+            body.appendChild(document.createElement("hr"));
+
+            return false;
+        }
+    </script>
+</head>
+
+<body>
+    <table align="center">
+        <form onsubmit="return onSubmit()">
+
+            <tr>
+                <td>Noun:</td>
+                <td>
+                    <input type="text" id=input1>
+                </td>
+                <br>
+            </tr>
+            <tr>
+                <td>Plural noun:</td>
+                <td>
+                    <input type="text" id=input2>
+                </td>
+                <br>
+            </tr>
+            <tr>
+                <td>Noun:</td>
+                <td>
+                    <input type="text" id=input3>
+                </td>
+                <br>
+            </tr>
+            <tr>
+                <td>Place:</td>
+                <td>
+                    <input type="text" id=input4>
+                </td>
+                <br>
+            </tr>
+            <tr>
+                <td>Adjective:</td>
+                <td>
+                    <input type="text" id=input5>
+                </td>
+                <br>
+            </tr>
+            <tr>
+                <td>Noun:</td>
+                <td>
+                    <input type="text" id=input6>
+                </td>
+                <br>
+            </tr>
+            <td>
+                <input type="submit" value="Submit">
+            </td>
+    </table>
+    </form>
+</body>
+
+<body id="lib" style="text-align: center">
+
+</body>
+
+</html>

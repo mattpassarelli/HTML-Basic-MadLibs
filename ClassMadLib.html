@@ -1,0 +1,70 @@
+<html>
+
+<head>
+    <title>Class MadLib</title>
+
+    <script>
+        function onSubmit() {
+            var input1 = document.getElementById("input1");
+            var input2 = document.getElementById("input2");
+            var input3 = document.getElementById("input3");
+            var body = document.getElementById("lib");
+
+            var button = document.createElement("button");
+            button.appendChild(document.createTextNode("Go back to the main menu"));
+
+            var MadLib = "<hr>" + "Please excuse " + input1.value + "," + "<br>" +
+                "who is far too " + input2.value + " to attend " + input3.value + " class." + "<br>" + "<br>";
+
+            body.innerHTML = MadLib;
+
+            body.appendChild(button);
+
+            button.onclick = function () {
+                window.location.href = "MadLibs.html";
+            }
+
+            body.appendChild(document.createElement("hr"));
+
+            return false;
+        }
+    </script>
+</head>
+
+<body>
+    <table align="center">
+        <form onsubmit="return onSubmit()">
+
+            <tr>
+                <td>Name:</td>
+                <td>
+                    <input type="text" id=input1>
+                </td>
+                <br>
+            </tr>
+            <tr>
+                <td>Adjective:</td>
+                <td>
+                    <input type="text" id=input2>
+                </td>
+                <br>
+            </tr>
+            <tr>
+                <td>Noun:</td>
+                <td>
+                    <input type="text" id=input3>
+                </td>
+                <br>
+            </tr>
+            <td>
+                <input type="submit" value="Submit">
+            </td>
+    </table>
+    </form>
+</body>
+
+<body id="lib" style="text-align: center">
+
+</body>
+
+</html>

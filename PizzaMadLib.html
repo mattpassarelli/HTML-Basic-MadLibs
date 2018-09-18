@@ -1,0 +1,170 @@
+<html>
+
+<head>
+    <title>Class MadLib</title>
+
+    <script>
+        function onSubmit() {
+            var input1 = document.getElementById("input1");
+            var input2 = document.getElementById("input2");
+            var input3 = document.getElementById("input3");
+            var input4 = document.getElementById("input4");
+            var input5 = document.getElementById("input5");
+            var input6 = document.getElementById("input6");
+            var input7 = document.getElementById("input7");
+            var input8 = document.getElementById("input8");
+            var input9 = document.getElementById("input9");
+            var input10 = document.getElementById("input10");
+            var input11 = document.getElementById("input11");
+            var input12 = document.getElementById("input12");
+            var input13 = document.getElementById("input13");
+            var input14 = document.getElementById("input14");
+            var input15 = document.getElementById("input15");
+            var body = document.getElementById("lib");
+
+            var button = document.createElement("button");
+            button.appendChild(document.createTextNode("Go back to the main menu"));
+
+            var MadLib = "<hr>" + "Pizza was invented by a " + input1.value + " " + input2.value + " chef named " + input3.value + "." + "<br>" +
+                "To make a pizza, you need to take a lump of " + input4.value + ", and make a thin round, " + input5.value + " " + input6.value + ". <br>" +
+                "Then you cover it with " + input7.value + " sauce, " + input8.value + " cheese, and freshly chopped " + input9.value + ". <br>" +
+                "Next you have to bake it in a very hot " + input10.value + ". When it's done, cut it into " + input11.value + " " + input12.value + "s. <br>" +
+                "Some kids like " + input13.value + " pizza the best, but my favorite is the " + input14.value + " pizza. If I could, I would eat pizza " + input15.value + " times a day!" +
+                "<br>" + "<br>"
+
+            body.innerHTML = MadLib;
+
+            body.appendChild(button);
+
+            button.onclick = function () {
+                window.location.href = "MadLibs.html";
+            }
+
+            body.appendChild(document.createElement("hr"));
+
+            return false;
+        }
+    </script>
+</head>
+
+<body>
+    <table align="center">
+        <form onsubmit="return onSubmit()">
+
+            <tr>
+                <td>Adjective:</td>
+                <td>
+                    <input type="text" id=input1>
+                </td>
+                <br>
+            </tr>
+            <tr>
+                <td>Nationality:</td>
+                <td>
+                    <input type="text" id=input2>
+                </td>
+                <br>
+            </tr>
+            <tr>
+                <td>Name:</td>
+                <td>
+                    <input type="text" id=input3>
+                </td>
+                <br>
+            </tr>
+            <tr>
+                <td>Noun:</td>
+                <td>
+                    <input type="text" id=input4>
+                </td>
+                <br>
+            </tr>
+            <tr>
+                <td>Adjective:</td>
+                <td>
+                    <input type="text" id=input5>
+                </td>
+                <br>
+            </tr>
+            <tr>
+                <td>Noun:</td>
+                <td>
+                    <input type="text" id=input6>
+                </td>
+                <br>
+            </tr>
+            <tr>
+                <td>Adjective:</td>
+                <td>
+                    <input type="text" id=input7>
+                </td>
+                <br>
+            </tr>
+            <tr>
+                <td>Adjective:</td>
+                <td>
+                    <input type="text" id=input8>
+                </td>
+                <br>
+            </tr>
+            <tr>
+                <td>Noun:</td>
+                <td>
+                    <input type="text" id=input9>
+                </td>
+                <br>
+            </tr>
+            <tr>
+                <td>Noun:</td>
+                <td>
+                    <input type="text" id=input10>
+                </td>
+                <br>
+            </tr>
+            <tr>
+                <td>Number:</td>
+                <td>
+                    <input type="text" id=input11>
+                </td>
+                <br>
+            </tr>
+            <tr>
+                <td>Shape:</td>
+                <td>
+                    <input type="text" id=input12>
+                </td>
+                <br>
+            </tr>
+            <tr>
+                <td>Food:</td>
+                <td>
+                    <input type="text" id=input13>
+                </td>
+                <br>
+            </tr>
+            <tr>
+                <td>Food:</td>
+                <td>
+                    <input type="text" id=input14>
+                </td>
+                <br>
+            </tr>
+            <tr>
+                <td>Number:</td>
+                <td>
+                    <input type="text" id=input15>
+                </td>
+                <br>
+            </tr>
+            <td>
+                <input type="submit" value="Submit">
+            </td>
+    </table>
+    </form>
+</body>
+
+<body id="lib" style="text-align: center">
+
+</body>
+
+</html>
